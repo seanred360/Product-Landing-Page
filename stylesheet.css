@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('RazerF5-Bold.otf');
+
+body {
+    margin-top: 50px;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    font-family: 'Razerf5', sans-serif, monospace;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(61, 61, 61, 0.479);
+}
+
+#header-img {
+    width: 10vw;
+    margin-left: 1%;
+}
+
+nav {
+    width: 100%;
+}
+
+#nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+}
+
+#title-block {
+    /* this sets the target position for the nav */
+    margin-top: -10vw;
+    padding-top: 10vw;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 897px;
+    background-position: center;
+    background-image: url("razer-blade-15-early2021-desktop-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sign-up-here {
+    text-align: center;
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 10vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0.17rem;
+
+    z-index: 1;
+    background: #00000056;
+    backdrop-filter: blur(6px);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(194, 194, 194);
+}
+
+#form {
+    text-align: center;
+}
+
+#email {
+    height: 30px;
+}
+
+h2 {
+    color: #44d62c;
+    border: grey;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#submit {
+    border-radius: 0.17rem;
+    border: 0;
+    color: #000;
+    font-size: .875rem;
+    font-weight: 700;
+    height: 2.5rem;
+    background-color: #44d62c;
+}
+
+#video-wrapper {
+    /* this sets the target position for the nav */
+    margin-top: -10vw;
+    padding-top: 10vw;
+}
+
+video {
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#pricing-row-1 {
+    /* this sets the target position for the nav */
+    margin-top: -10vw;
+    padding-top: 10vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#pricing-row-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.model {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(194, 194, 194);
+    background: black;
+    margin: 20px;
+}
+
+.model-img {
+    width: 100%;
+    background:rgba(20, 20, 20, 0.801);
+}
+
+.model-info {
+    width: 100%;
+    background: black;
+}
+
+.model-info h3,
+.model-info ul,
+.model-info h4 {
+    margin: 20px;
+    width: 300px;
+}
+
+.select-btn {
+    border-radius: 0.17rem;
+    border: 0;
+    color: #000;
+    font-size: .875rem;
+    font-weight: 700;
+    height: 2.5rem;
+    background-color: #44d62c;
+    width: 100%;
+}
+
+@media (max-width: 1240px) {
+    /* For desktop: */
+    #pricing-row-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #pricing-row-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .model-info h3,
+    .model-info ul,
+    .model-info h4 {
+        margin: 20px;
+        width: auto;
+    }
+
+    #video-block {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
