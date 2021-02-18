@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
 </head>
 
-
 <body>          
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <header id="header">
@@ -16,8 +16,8 @@
         src="razer.svg">
         <nav id="nav-bar">
             <ul>
-                <li><a class="nav-link" href="#title-block">FEATURES</a></li>
-                <li><a class="nav-link" href="#video-wrapper">HOW IT WORKS</a></li>
+                <li><a class="nav-link" href="#features">FEATURES</a></li>
+                <li><a class="nav-link" href="#video-wrapper">WATCH</a></li>
                 <li><a class="nav-link" href="#pricing">PRICING</a></li>
             </ul>
         </nav>
@@ -32,7 +32,7 @@
     </div>
     
     <div id="sign-up-here">
-        <h2>Razer Blade 15</h2>
+        <h2 id="sign-up-title">Razer Blade 15</h2>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
             <input id="email" name="email" type="email" placeholder="Enter your email address" required>
             <br>
@@ -41,12 +41,62 @@
         </form>
     </div>
 
-    <div id="video-wrapper">
-        <video id="video" src="Razer Blade 15 Still the Best Gaming Laptop_1080p.webm" controls>
-            <source src="Razer Blade 15 Still the Best Gaming Laptop_1080p.webm" type="video/webm">
-            <source src="Razer Blade 15 Still the Best Gaming Laptop_1080p.mp4" type="video/mp4">
-            Your browser does not support the video format.
-        </video>
+    <div id="features">
+        
+        <div class="features-row">
+        
+            <div class="feature-single">
+                <img class="features-img" src="icon-thx.png">
+                <h2 class="features-text">THX® Spatial Audio</h2>
+                <h2 class="features-description">An advanced 7.1 surround sound that provides pinpoint positional accuracy when using headphones and speakers, to deliver immersive, lifelike audio for stereo and multi-channel content alike.</h2>
+            </div>
+            
+            <div class="feature-single">
+                <img class="features-img" src="icon-synapse-3.png">
+                <h2 class="features-text">Advanced Control System</h2>
+                <h2 class="features-description">Take full control with the new Razer Synapse 3, from customizing lighting, managing profiles, adjusting fans, and even stepping up graphics performance in Gaming Mode.</h2>
+            </div>
+
+            <div class="feature-single">
+                <img class="features-img" src="icon-touchpad-v2.png">
+                <h2 class="features-text">Precise Glass Touchpad</h2>
+                <h2 class="features-description">A large, clickable glass touchpad with Microsoft Precision Touchpad support means smooth and precise control, including a range of gestures for expanded navigation.</h2>
+            </div>
+
+        </div>
+        
+        <div class="features-row">
+            
+            <div class="feature-single">
+                <img class="features-img" src="icon-hd-webcam.png">
+                <h2 class="features-text">Windows Hello <br>
+                (Advanced Model)</h2>
+                <h2 class="features-description">Using facial recognition or a PIN, Windows Hello is a fast, secure, and password-less way to unlock your Windows devices.</h2>
+            </div>
+    
+            <div class="feature-single">
+                <img class="features-img" src="icon-usb-c.png">
+                <h2 class="features-text">USB-C Charging <br> (Advanced Model)</h2>
+                <h2 class="features-description">Quickly charge on the go with a USB-C 20V laptop charger that also works when connected via the Thunderbolt port.</h2>
+            </div>
+
+            <div class="feature-single">
+                <img class="features-img" src="logo-powered-razer-chroma-rgb.png">
+                <h2 class="features-text">Per Key RGB Lighting</h2>
+                <h2 class="features-description">The Advanced Models of the Razer Blade 15 are equipped with per-key lighting powered by Razer Chroma™ RGB. Each key can be individually assigned a color, allowing for maximum customization and effect options.</h2>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="video-block">
+        <div id="video-wrapper">
+            <video id="video" src="Razer Blade 15 Still the Best Gaming Laptop_1080p.webm" controls>
+                <source src="Razer Blade 15 Still the Best Gaming Laptop_1080p.webm" type="video/webm">
+                <source src="Razer Blade 15 Still the Best Gaming Laptop_1080p.mp4" type="video/mp4">
+                Your browser does not support the video format.
+            </video>
+        </div>
     </div>
     
     <section id="pricing">
@@ -159,4 +209,30 @@
         </div>
     </section>
 </body>
+
+<footer>
+    <div id="footer-left">
+        <strong><h5>Company</h5></strong>
+        <br>
+        <ul>
+            <li><a href="" target="_blank">About Us |</a></li>
+            <li><a href="" target="_blank">Careers | </a></li>
+            <li><a href="" target="_blank">Press Room | </a></li>
+            <li><a href="" target="_blank">Investor Relations | </a></li>
+            <li><a href="" target="_blank">Contact Us | </a></li>
+        </ul>
+        <br>
+        <h5>CopycatRazer.com Copyright © 2021 Razer Inc. All rights reserved.</h5>
+    </div>
+    
+    <div id="footer-right">
+        <h5 id="social-media-title">FOR GAMERS. BY GAMERS.™</h5>
+        <a href="https://www.facebook.com/RazerSouthAfrica/" target="_blank">
+            <img class="social-media-icon" src="facebook-icon.svg"></a>
+        <a href="https://www.instagram.com/razer/?hl=en" target="_blank">
+            <img class="social-media-icon" src="instagram-icon.svg"></a>
+        <a href="https://twitter.com/Razer?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+            <img class="social-media-icon" src="twitter-icon.svg"></a>
+    </div>
+</footer>
 </html>

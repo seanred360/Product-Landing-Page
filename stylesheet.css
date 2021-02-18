@@ -9,6 +9,7 @@ body {
 }
 
 header {
+    z-index: 1;
     width: 100%;
     position: fixed;
     top: 0;
@@ -37,6 +38,32 @@ nav {
     color: rgb(194, 194, 194);
 }
 
+#nav-bar a:hover {
+    color: white;
+}
+
+#nav-bar a:active {
+    color: #44d62c;
+}
+
+#sign-up-here {
+    text-align: center;
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 10vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0.17rem;
+
+    z-index: 2;
+    background: #00000056;
+    backdrop-filter: blur(6px);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(194, 194, 194);
+}
+
 #title-block {
     /* this sets the target position for the nav */
     margin-top: -10vw;
@@ -53,23 +80,6 @@ nav {
     background-repeat: no-repeat;
 }
 
-#sign-up-here {
-    text-align: center;
-    display: block;
-    position: fixed;
-    right: 0;
-    top: 10vw;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 0.17rem;
-
-    z-index: 1;
-    background: #00000056;
-    backdrop-filter: blur(6px);
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(194, 194, 194);
-}
 
 #form {
     text-align: center;
@@ -79,7 +89,7 @@ nav {
     height: 30px;
 }
 
-h2 {
+#sign-up-title {
     color: #44d62c;
     border: grey;
     font-size: 1.5em;
@@ -96,18 +106,66 @@ h2 {
     background-color: #44d62c;
 }
 
+#submit:hover {
+    background-color: #43d62c98;
+}
+
+#submit:active {
+    background-color: rgba(128, 128, 128, 0.082);
+}
+
+#features {
+    /* this sets the target position for the nav */
+    margin-top: -5vw;
+    padding-top: 5vw;
+    background: black;
+}
+
+.features-row {
+    display:flex;
+}
+
+.feature-single {
+    width: 100%;
+    padding-top: 20px;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.features-img {
+    width: 100px;
+    height: auto;
+}
+
+.features-text {
+    text-align: center;
+}
+
+.features-description {
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(194, 194, 194);
+    width: 300px;
+}
+
+#video-block {
+    margin-top: 20px;
+}
+
 #video-wrapper {
     /* this sets the target position for the nav */
-    margin-top: -10vw;
-    padding-top: 10vw;
+    padding-top: 50px;
+    margin-top: -50px;
 }
 
 video {
-    padding-top: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    border: 1px solid rgb(194, 194, 194);
 }
 
 #pricing-row-1 {
@@ -164,8 +222,85 @@ video {
     width: 100%;
 }
 
+.select-btn:hover {
+    background-color: #43d62c98;
+}
+
+.select-btn:active {
+    background-color: rgba(128, 128, 128, 0.082);
+}
+
+footer {
+    color: white;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(24, 24, 24);
+}
+
+footer li,
+footer a {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    color: #44d62c;;
+}
+
+footer a:hover {
+    color: #43d62c98;
+}
+
+footer a:active {
+    text-decoration: underline;
+    color: rgba(128, 128, 128, 0.082);
+}
+
+#footer-left {
+    top:0;
+    left:0;
+    margin-left: 20px;
+}
+
+#footer-right {
+    position: absolute;
+    top:0;
+    right:0;
+    margin-right: 20px;
+}
+
+.social-media-icon {
+    width: 40px;
+}
+
+footer img:hover {
+    /* tool here https://codepen.io/sosuke/pen/Pjoqqp 
+    Credit goes to MultiplyByZer0 */
+    /* set the image to grey */
+    filter: invert(100%) sepia(0%) saturate(0%) 
+    hue-rotate(327deg) brightness(100%) contrast(99%);
+}
+
+footer img:active {
+    /* tool here https://codepen.io/sosuke/pen/Pjoqqp 
+    Credit goes to MultiplyByZer0 */
+    /* set the image to black */
+    filter: invert(51%) sepia(0%) saturate(100%) 
+    hue-rotate(230deg) brightness(0%) contrast(86%);
+}
+
 @media (max-width: 1240px) {
-    /* For desktop: */
+    /* For mobile: */
+
+    .features-row {
+        flex-direction: column;
+    }
+
+    #video-block {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     #pricing-row-1 {
         display: flex;
         flex-direction: column;
@@ -185,11 +320,8 @@ video {
         width: auto;
     }
 
-    #video-block {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    footer li {
+        display: block;
     }
 }
 
